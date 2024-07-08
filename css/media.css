@@ -1,0 +1,165 @@
+@media screen and (max-width:300px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+/* Home */
+@media screen and (max-width:992px) {
+    .home .container {
+        flex-direction: column-reverse;
+        gap: 50px;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .home .container>* {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home .container .main-btn {
+        border-radius: 100vh;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .home .container .home-content .btn-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+/* Chefs */
+@media screen and (max-width:992px) {
+    .chefs .chefs-cards .card {
+        width: calc((100% - 1.875rem)/2);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .chefs .chefs-cards .card {
+        width: 100%;
+    }
+}
+
+/* Gallery */
+
+@media screen and (max-width:1400px) {
+    .gallery .container .gallery-photos {
+        height: 1000px;
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    .gallery .container .gallery-photos {
+        height: 800px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .gallery .container .gallery-photos {
+        height: 1600px;
+    }
+
+    .gallery .gallery-photos picture {
+        width: calc((100% - 1.25rem)/2);
+    }
+
+    .gallery .gallery-photos .pizza {
+        order: 1;
+    }
+
+    .gallery .gallery-photos .burger {
+        order: 2;
+    }
+
+    .gallery .gallery-photos .levitation {
+        order: 3;
+    }
+
+    .gallery .gallery-photos .frittata {
+        order: 4;
+    }
+
+
+    .gallery .gallery-photos .beef {
+        order: 5;
+    }
+
+    .gallery .gallery-photos .fired {
+        order: 6;
+    }
+
+    .gallery .gallery-photos .kebab {
+        order: 7;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .gallery .container .gallery-photos {
+        height: auto;
+    }
+
+    .gallery .gallery-photos picture {
+        width: 100%;
+    }
+}
+
+
+/* Contacts */
+
+@media screen and (max-width:992px) {
+    .contact form .user input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contact .details .item {
+        width: 100%;
+    }
+}
+
+
+/* footer */
+
+@media screen and (max-width:1200px) {
+
+    footer .container .about,
+    .contact-details {
+        width: calc((100% - 1.25rem) / 2);
+        order: 1;
+    }
+
+    footer .container .subscription {
+        width: 100%;
+        order: 2;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    footer .container .about,
+    .contact-details,
+    .subscription {
+        width: 100%;
+        order: 0;
+    }
+
+    footer .container .contact-details {
+        order: 3;
+    }
+}
+
+@media screen and (max-width:576px) {
+    footer .subscription-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
